@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kanji Tracker</title>
+</head>
+<body>
+    <h1 id="title">Kanji Tracker Survey Form</h1>
+    <p id="description">Thanks for helping us improve the platform.</p>
+    <form id="survey-form" action="somewhere.com" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label id="name-label" for="first-name">
+                Enter Your First Name:
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="Enter your first name"
+                    required>
+            </label>
+            <label id="name-label" for="last-name">
+                Enter Your Last Name:
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="Enter your last name"
+                    required>
+            </label>
+            <label id="email-label" for="email">
+                Enter Your Email Address:
+                <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
+            </label>
+            <label id="number-label" for="number">
+                Enter Your Age:
+                <input 
+                    type="number"
+                    id="number"
+                    name="age"
+                    min="10"
+                    max="100"
+                    placeholder="18">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Japanese Level</legend>
+            <p>Please choose your JLPT exam certificate(s);</p>
+            <select name="dropdown" id="dropdown">
+                <option value="">Select one</option>
+                <option value="n1">N1</option>
+                <option value="n2">N2</option>
+                <option value="n3">N3</option>
+                <option value="n4">N4</option>
+                <option value="n5">N5</option>
+                <option value="none">None</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Opinions</legend>
+            <p>Whats your opinion about our website?</p>
+                <div>
+                    <input type="radio" name="like" id="very-good" value="very-good">
+                    <label for="very">Very Good</label>
+                </div>
+                <div>
+                    <input type="radio" name="like" id="good" value="good">
+                    <label for="yes">Good</label>
+                </div>
+                <div>
+                    <input type="radio" name="like" id="useful" value="useful">
+                    <label for="useful">Useful</label>
+                </div>
+                <div>
+                    <input type="radio" name="like" id="not-good" value="not-good">
+                    <label for="okay">Not Good</label>
+                </div>
+                <div>
+                    <input type="radio" name="like" id="bad" value="bad">
+                    <label for="no">Bad</label>
+                </div>
+            <p>Are you using our website daily?</p>
+                <div>
+                    <input type="checkbox" name="use-daily" id="use-daily" value="yes">
+                    <label for="use-daily">Yes</label>
+                </div>
+            <p>Would you recommend it to a friend?</p>
+                <div>
+                    <input type="checkbox" name="recommend" id="recommend" value="yes">
+                    <label for="recommend">Yes</label>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Suggestions</legend>
+            <p>Let us know your suggestions!</p>
+            <textarea name="suggestions" id="suggestions" cols="40px" rows="6px" maxlength="200" placeholder="Enter your suggestions here..."></textarea>
+            <button type="submit" id="submit">Submit Form</button>
+        </fieldset>
+    </form>
+</body>
+</html>
